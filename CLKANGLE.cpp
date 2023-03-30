@@ -9,6 +9,6 @@ int main(){
     cin.tie(NULL);
     cin>>h>>m;
     y=6*m;
-    x=30*h+y/12;
+    x=30*h+m/2;
     cout<<fixed<<setprecision(1)<<min(abs(x-y),360-abs(x-y));
 }
