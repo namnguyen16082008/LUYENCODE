@@ -4,12 +4,13 @@
 using namespace std;
 
 const ll A=33;
-ll c,n,a,b,ans=0,x[A+5]={},mp[A+5]={};
+ll c,n,a,b,ans=1,x[A+5]={},mp[A+5]={};
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cin>>c>>n;
     x[c]=1;
+    mp[c]=1;
     for (ll i=1;i<=n;i++){
         cin>>a>>b;
         if (x[b]){
@@ -19,6 +20,6 @@ int main(){
             ans+=mp[a]==1;
         }
     }
-    for (ll i=1;i<=n;i++)
+    for (ll i=1;i<=33;i++)
         if (x[i]) cout<<i<<" "<<ans;
 }
